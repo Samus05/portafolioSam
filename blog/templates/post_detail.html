@@ -1,0 +1,17 @@
+{%  extends 'layout.html'%}
+
+{% block content%}
+
+<div class="text-justify">
+        <!--<h1>detalles</h1>-->
+
+<h2>{{post.title}}</h2>
+<p class="my-2 h5 text-muted">{{post.date | date:'d M .Y'}}</p>
+<img src="{{post.image.url}}" atl="post.title" class="img-fluid">
+<div class="my-4">
+    <p>{{post.description|safe}}</p>
+</div>
+
+</div>
+
+{% endblock %}
